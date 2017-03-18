@@ -2,25 +2,40 @@
 
 My notebook whilst working through the [LLVM Tutorial](http://llvm.org/docs/tutorial/).
 
-## Setup
+## Progress
+
+ 1. [x] Kaleidoscope: Tutorial Introduction and the Lexer
+ 2. [x] Kaleidoscope: Implementing a Parser and AST
+ 3. [ ] Kaleidoscope: Code generation to LLVM IR
+ 4. [ ] Kaleidoscope: Adding JIT and Optimizer Support
+ 5. [ ] Kaleidoscope: Extending the Language: Control Flow
+ 6. [ ] Kaleidoscope: Extending the Language: User-defined Operators
+ 7. [ ] Kaleidoscope: Extending the Language: Mutable Variables
+ 8. [ ] Kaleidoscope: Compiling to Object Code
+ 9. [ ] Kaleidoscope: Adding Debug Information
+10. [ ] Kaleidoscope: Conclusion and other useful LLVM tidbits
+
+## Usage
+
+### Setup
 
 ```sh
 $ brew install llvm
 ```
 
-## Compile
+### Compile
 
 ```sh
 $ make
 ```
 
-## Test
+### Test
 
 ```sh
 $ make test
 ```
 
-## Cleanup
+### Cleanup
 
 ```sh
 $ make clean
