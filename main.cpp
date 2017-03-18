@@ -400,6 +400,8 @@ static void HandleTopLevelExpression() {
   // Evaluate a top-level expression into an anonymous function.
   if (ParseTopLevelExpr()) {
     fprintf(stderr, "Parsed a top-level expr\n");
+  } else {
+    while (getNextToken() != ';') {}
   }
 }
 
@@ -408,6 +410,7 @@ static void MainLoop() {
   while (true) {
     switch (CurTok) {
     case tok_eof:
+      fprintf(stderr, "\nBye!\n");
       return;
     case ';': // ignore top-level semicolons.
       fprintf(stderr, "ready> ");
