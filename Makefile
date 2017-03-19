@@ -1,5 +1,5 @@
-LDFLAGS  = -L/usr/local/opt/llvm/lib
-CPPFLAGS = -I/usr/local/opt/llvm/include -std=c++11 -O3
+LLVM_CONFIG = /usr/local/opt/llvm/bin/llvm-config
+CPPFLAGS = -g -O3 `$(LLVM_CONFIG) --cxxflags --ldflags --system-libs --libs core`
 
 default: main
 
